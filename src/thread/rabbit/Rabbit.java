@@ -1,5 +1,7 @@
 package thread.rabbit;
 
+import thread.tortoise.Tortoise;
+
 import javax.swing.*;
 
 public class Rabbit implements Runnable {
@@ -40,6 +42,7 @@ public class Rabbit implements Runnable {
                     break;
                 case 4:
                     System.out.println("The Rabbit has reached the finish line!");
+                    Tortoise tortoise = new Tortoise();
                     break;
             }
             try {

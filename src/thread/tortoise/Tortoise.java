@@ -4,7 +4,6 @@ import javax.swing.*;
 
 public class Tortoise extends Thread {
     private static final int MILESTONES = 5;
-
     private final Thread tortoise;
 
     public Tortoise() {
@@ -29,12 +28,6 @@ public class Tortoise extends Thread {
                     break;
                 case 3:
                     System.out.println("The Tortoise has reached the Big Oak Tree!");
-                    System.out.println("The Tortoise decides to go to sleep!");
-                    try {
-                        Thread.sleep(3000L);
-                    } catch (InterruptedException e) {
-                        System.err.println("The Tortoise's sleep got interrupted!");
-                    }
                     break;
                 case 4:
                     System.out.println("The Tortoise has reached the finish line!");
@@ -53,4 +46,5 @@ public class Tortoise extends Thread {
                 JOptionPane.OK_CANCEL_OPTION
         );
     }
+
 }
